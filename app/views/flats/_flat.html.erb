@@ -1,0 +1,31 @@
+<div class="card bg-light m-3" style="width: 18rem;">
+  <img class="card-img-top" src="https://source.unsplash.com/random/200x200?sig=1" alt="Card image cap">
+
+  <div class="card-body">
+
+    <h5 class="card-title">
+      <strong>Name:</strong>
+      <%= flat.name %>
+    </h5>
+
+    <p class="card-text">
+        <strong>Address:</strong>
+        <%= flat.address %>
+        <br>
+        <strong>Price per night:</strong>
+        <%= flat.price_per_night %>
+        <br>
+        <strong>Number of guests:</strong>
+        <%= flat.number_of_guests %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= flat.description %>
+    </p>
+
+    <button class="btn btn-warning">
+      <%= link_to "Show this flat", flat %>
+    </button>
+  </div>
+</div>
